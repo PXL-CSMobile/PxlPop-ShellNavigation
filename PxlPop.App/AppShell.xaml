@@ -46,6 +46,12 @@
     </FlyoutItem>
 
     <ShellContent
+        Title="Tickets"
+        Icon="{mi:FontAwesomeSolid Ticket, IconColor={StaticResource Primary}}"
+        ContentTemplate="{DataTemplate pages:TicketPage}"
+        Route="TicketPage" />
+
+    <ShellContent
         Title="Favourites"
         Icon="{mi:FontAwesomeSolid Heart, IconColor={StaticResource Primary}}"
         ContentTemplate="{DataTemplate pages:FavouritesPage}"

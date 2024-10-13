@@ -95,6 +95,9 @@
 	  <MauiXaml Update="Pages\InfoParkingPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="Pages\LessonPage.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="Pages\LineupPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

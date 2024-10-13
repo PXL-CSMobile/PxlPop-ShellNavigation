@@ -14,6 +14,8 @@ namespace PxlPop.App
             //Routing.RegisterRoute(nameof(AccountPage), typeof(AccountPage));
             //Routing.RegisterRoute(nameof(FavouritesPage), typeof(FavouritesPage));
             Routing.RegisterRoute(nameof(OrderPage), typeof(OrderPage));
+            Routing.RegisterRoute(nameof(LessonPage), typeof(LessonPage));
+
         }
     }
 }

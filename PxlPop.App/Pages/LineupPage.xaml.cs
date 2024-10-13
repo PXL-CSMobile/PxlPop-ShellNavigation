@@ -50,11 +50,16 @@ public partial class LineupPage : ContentPage
 
     private async void OnTapGestureRecognizerTapped(object sender, TappedEventArgs e)
     {
-        string description = e.Parameter.ToString();
+        Lesson lesson = e.Parameter as Lesson;
 
-        if (description != null)
+        if (lesson is not null)
         {
-            await DisplayAlert("Lesson", description, "OK");
+            // navigate to detail page
+            var navParameters = new Dictionary<string, object>()
+            {
+                { "Lesson", lesson }
+            };
+            await Shell.Current.GoToAsync(nameof(LessonPage), navParameters);
         }
 
     }
