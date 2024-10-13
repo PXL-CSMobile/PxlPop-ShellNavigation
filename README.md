@@ -7,9 +7,8 @@ In de [vorige opdracht](https://classroom.github.com/a/p6fqBomf) werden de nodig
 - Voeg zowel een FlyoutHeader als een FlyoutFooter toe
 - Zorg voor een correcte opmaak door gebruik te maken van Styles
 
-
-
-
+<img src="media/flyout_light.png" height="600">
+<img src="media/flyout_dark.png" height="600">
 
 ## InfoPage
 - Vervang de InfoPage door 3 aparte ContentPages: InfoParkingPage, InfoFoodPage en InfoDrinksPage
@@ -21,3 +20,14 @@ In de [vorige opdracht](https://classroom.github.com/a/p6fqBomf) werden de nodig
 
 ## MainPage
 - Verberg de bestaande Buttons
+
+## LessonPage
+- Maak een nieuwe ContentPage aan: LessonPage
+- Voeg een Label toe: descriptionLabel
+- Zorg dat de *name* eigenschap van een Lesson object wordt getoond als titel van de pagina
+- Zorg dat de *description* eigenschap van een Lesson object wordt getoond in de descriptionLabel
+- Navigeer naar de LessonPage wanneer een Lesson object wordt geselecteerd in de CollectionView, gebruik hiervoor de TapGestureRecognizer
+- Zorg dat het juiste *Lesson* object wordt doorgegeven aan de LessonPage
+
+<img src="media/lineuptap.png" height="600">
+<img src="media/lesson.png" height="600">
