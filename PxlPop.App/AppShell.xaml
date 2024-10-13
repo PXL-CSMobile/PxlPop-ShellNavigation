@@ -9,6 +9,12 @@
     Shell.FlyoutBehavior="Flyout"
     Title="PxlPop.App">
 
+    <Shell.FlyoutHeader>
+        <VerticalStackLayout Padding="20" Spacing="15" BackgroundColor="{StaticResource Primary}" >
+            <Image Source="logo_pxl_hogeschool.png" Aspect="AspectFill" />
+        </VerticalStackLayout>
+    </Shell.FlyoutHeader>
+
     <ShellContent
         Title="Home"
         Icon="{mi:FontAwesomeSolid House, IconColor={StaticResource Primary}}"
@@ -50,4 +56,12 @@
         Icon="{mi:FontAwesomeSolid CircleUser, IconColor={StaticResource Primary}}"
         ContentTemplate="{DataTemplate pages:AccountPage}"
         Route="AccountPage" />
+
+    <Shell.FlyoutFooter>
+        <VerticalStackLayout Padding="20" Spacing="15" BackgroundColor="{StaticResource Primary}">
+            <Label Text="Powered by" HorizontalTextAlignment="Center" Style="{StaticResource Title}" 
+                   TextColor="Black"/>
+            <Image Source="logo_pxl_digital.png" Aspect="AspectFill" />
+        </VerticalStackLayout>
+    </Shell.FlyoutFooter>
 </Shell>

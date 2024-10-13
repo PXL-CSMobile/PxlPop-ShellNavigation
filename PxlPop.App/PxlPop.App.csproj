@@ -57,6 +57,14 @@
 	</ItemGroup>
 
 	<ItemGroup>
+	  <Compile Remove="Pages\InfoPage.xaml.cs" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <MauiXaml Remove="Pages\InfoPage.xaml" />
+	</ItemGroup>
+
+	<ItemGroup>
 		<PackageReference Include="AathifMahir.Maui.MauiIcons.FontAwesome" Version="3.0.0" />
 		<PackageReference Include="AathifMahir.Maui.MauiIcons.FontAwesome.Solid" Version="3.0.0" />
 		<PackageReference Include="CommunityToolkit.Maui" Version="9.0.3" />
@@ -82,9 +90,6 @@
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\InfoFoodPage.xaml">
-	    <Generator>MSBuild:Compile</Generator>
-	  </MauiXaml>
-	  <MauiXaml Update="Pages\InfoPage.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
 	  <MauiXaml Update="Pages\InfoParkingPage.xaml">

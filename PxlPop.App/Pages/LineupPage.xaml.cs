@@ -42,6 +42,7 @@ public partial class LineupPage : ContentPage
         {
             List<Lesson> dayLessons = departmentLessons.Where(l => l.Begin.DayOfWeek.ToString() == day).OrderBy(l => l.Begin).ToList();
             groupedLessons.Add(new LessonGroup(day, dayLessons));
+            await Task.Delay(500);
         }
 
         lessonsCollectionView.ItemsSource = groupedLessons;

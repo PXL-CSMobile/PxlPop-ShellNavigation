@@ -8,11 +8,11 @@ namespace PxlPop.App
         {
             InitializeComponent();
 
-            Routing.RegisterRoute(nameof(LineupPage), typeof(LineupPage));
-            Routing.RegisterRoute(nameof(InfoPage), typeof(InfoPage));
-            Routing.RegisterRoute(nameof(TicketPage), typeof(TicketPage));
-            Routing.RegisterRoute(nameof(AccountPage), typeof(AccountPage));
-            Routing.RegisterRoute(nameof(FavouritesPage), typeof(FavouritesPage));
+            //Routing.RegisterRoute(nameof(LineupPage), typeof(LineupPage));
+            //Routing.RegisterRoute(nameof(InfoPage), typeof(InfoPage));
+            //Routing.RegisterRoute(nameof(TicketPage), typeof(TicketPage));
+            //Routing.RegisterRoute(nameof(AccountPage), typeof(AccountPage));
+            //Routing.RegisterRoute(nameof(FavouritesPage), typeof(FavouritesPage));
             Routing.RegisterRoute(nameof(OrderPage), typeof(OrderPage));
         }
     }
