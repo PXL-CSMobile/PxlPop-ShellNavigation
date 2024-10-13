@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:mi="http://www.aathifmahir.com/dotnet/2022/maui/icons"
+             x:Class="PxlPop.App.Pages.InfoPage"
+             Title="Info">
+    <Shell.TitleView>
+        <Label Text="Info" Style="{StaticResource ShellTitle}"></Label>
+    </Shell.TitleView>
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Style="{StaticResource PageLayout}">
+            <HorizontalStackLayout Spacing="15">
+                <mi:MauiIcon Icon="{mi:FontAwesomeSolid Car}" IconColor="{StaticResource Primary}"/>
+                <Label 
+                    Text="Parking"
+                    Style="{StaticResource Title}"
+                    VerticalOptions="Center" 
+                    HorizontalTextAlignment="Center" />
+            </HorizontalStackLayout>
+            <BoxView Color="{StaticResource Primary}"
+                HeightRequest="2"
+                HorizontalOptions="Fill" />
+            <Label>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sagittis quis mauris ac suscipit. Suspendisse consequat ipsum vehicula erat dictum consectetur. Integer nec sollicitudin magna, sed porttitor urna. Cras eget magna sit amet lacus pellentesque finibus eget ut tellus. Fusce at mauris eu orci interdum tristique. Sed vel nibh pretium, iaculis felis consectetur, maximus mi. Aliquam eu aliquet ex, nec porta enim. In dignissim diam ex, non finibus erat ultrices eu.
+            </Label>
+            <HorizontalStackLayout Spacing="15">
+                <mi:MauiIcon Icon="{mi:FontAwesomeSolid Utensils}" IconColor="{StaticResource Primary}"/>
+                <Label 
+                    Text="Food"
+                    Style="{StaticResource Title}"
+                    VerticalOptions="Center" 
+                    HorizontalTextAlignment="Center" />
+            </HorizontalStackLayout>
+            <BoxView Color="{StaticResource Primary}"
+                HeightRequest="2"
+                HorizontalOptions="Fill" />
+            <Label>
+                Mauris neque odio, aliquet vitae rhoncus convallis, varius quis urna. Curabitur sagittis eros quis odio interdum, eu consequat sapien pharetra. Maecenas tincidunt vitae eros a elementum. Suspendisse potenti. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla lacinia augue id placerat porttitor. Nulla euismod a magna in suscipit. Fusce volutpat nisl sem, a ornare augue dapibus ac. Etiam imperdiet et orci at sollicitudin. Vivamus et tincidunt erat. Nullam non condimentum ligula. Cras hendrerit euismod malesuada. Praesent in vestibulum odio. Quisque pretium neque sed tincidunt condimentum. Duis id tristique nibh.
+            </Label>
+            <HorizontalStackLayout Spacing="15">
+                <mi:MauiIcon Icon="{mi:FontAwesomeSolid ChampagneGlasses}" IconColor="{StaticResource Primary}"/>
+                <Label 
+                    Text="Drinks"
+                    Style="{StaticResource Title}"
+                    VerticalOptions="Center" 
+                    HorizontalTextAlignment="Center" />
+            </HorizontalStackLayout>
+            <BoxView Color="{StaticResource Primary}"
+                HeightRequest="2"
+                HorizontalOptions="Fill" />
+            <Label>
+                Phasellus vitae ante consequat, maximus nisi nec, finibus nisl. Aenean vel interdum ligula. Donec eget pharetra enim. Aliquam fermentum turpis libero, sed volutpat sem aliquam et. Pellentesque ut ligula ante. Morbi vitae sapien congue, aliquam erat vel, porta enim. Quisque non efficitur lacus. Quisque hendrerit congue arcu finibus pulvinar. Donec eleifend, mi vitae ornare consectetur, lorem eros tempus mauris, a placerat mi dui in tortor.
+            </Label>
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
