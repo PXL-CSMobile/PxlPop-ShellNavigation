@@ -10,21 +10,20 @@
 
     <ScrollView>
         <Grid>
-            <Grid.RowDefinitions>
+            <!--<Grid.RowDefinitions>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="Auto"/>
-            </Grid.RowDefinitions>
+            </Grid.RowDefinitions>-->
             <Image x:Name="pxlLogo" Source="logo_pxl_bol.png" 
                    Aspect="AspectFit" 
-                   Margin="30"
-                   Grid.Row="0">
+                   Margin="30">
                 <Image.Shadow>
                     <Shadow Brush="{StaticResource Primary}"
                             Offset="20,10"
                             Opacity="0.6"/> 
                 </Image.Shadow>
             </Image>
-            <VerticalStackLayout
+            <!--<VerticalStackLayout
                 Grid.Row="1"
                 Style="{StaticResource PageLayout}">
 
@@ -38,7 +37,7 @@
                         ImageSource="{mi:FontAwesomeSolid Icon=Ticket, IconSize=Large, IconColor={AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}}"/>
                 <Button Text="Account" Clicked="OnAccountClicked"
                         ImageSource="{mi:FontAwesomeSolid Icon=CircleUser, IconSize=Large, IconColor={AppThemeBinding Dark={StaticResource Black}, Light={StaticResource White}}}" />
-            </VerticalStackLayout>
+            </VerticalStackLayout>-->
         </Grid>
     </ScrollView>
 

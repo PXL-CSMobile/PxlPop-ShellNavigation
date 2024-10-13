@@ -5,7 +5,8 @@ namespace PxlPop.App.Pages;
 
 public partial class LineupPage : ContentPage
 {
-	private List<LessonGroup> groupedLessons = new List<LessonGroup>();
+    private List<LessonGroup> groupedLessons = new List<LessonGroup>();
+    List<Lesson> allLessons;
 
     public LineupPage()
 	{
@@ -15,13 +16,13 @@ public partial class LineupPage : ContentPage
     private async void OnPageAppearing(object sender, EventArgs e)
     {
         indicator.IsRunning = true;
-        lessonsCollectionView.ItemsSource = groupedLessons;
+        allLessons = await LessonData.GenerateLessonsAsync();
         indicator.IsRunning = false;
     }
 
     private async void OnDepartmentChanged(object sender, EventArgs e)
     {
-        if(departmentPicker.SelectedIndex > -1)
+        if (departmentPicker.SelectedIndex > -1)
         {
             indicator.IsRunning = true;
             await LoadData(departmentPicker.SelectedItem.ToString());
@@ -33,8 +34,7 @@ public partial class LineupPage : ContentPage
     {
         groupedLessons.Clear();
 
-        List<Lesson> lessons = await LessonData.GenerateLessonsAsync();
-        List<Lesson> departmentLessons = lessons.Where(l => l.Department == department).ToList();
+        List<Lesson> departmentLessons = allLessons.Where(l => l.Department == department).ToList();
 
         List<string> days = departmentLessons.OrderBy(l => l.Begin).Select(l => l.Begin.DayOfWeek.ToString()).Distinct().ToList();
 
@@ -45,5 +45,16 @@ public partial class LineupPage : ContentPage
         }
 
         lessonsCollectionView.ItemsSource = groupedLessons;
+    }
+
+    private async void OnTapGestureRecognizerTapped(object sender, TappedEventArgs e)
+    {
+        string description = e.Parameter.ToString();
+
+        if (description != null)
+        {
+            await DisplayAlert("Lesson", description, "OK");
+        }
+
     }
 }
