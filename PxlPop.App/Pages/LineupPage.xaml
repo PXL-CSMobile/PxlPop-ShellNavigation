@@ -49,6 +49,12 @@
                 <DataTemplate>
                     <VerticalStackLayout>
                         <Grid RowSpacing="15" ColumnSpacing="15">
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"
+                                    NumberOfTapsRequired="2" CommandParameter="{Binding Description}"/>
+
+                            </Grid.GestureRecognizers>
+
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="*"/>
